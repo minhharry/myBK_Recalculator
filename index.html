@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Grade Recalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>myBK Grade Recalculator</h1>
+            <p>
+                Paste your entire grade report from the
+                <a href="https://mybk.hcmut.edu.vn/app/sinh-vien/ket-qua-hoc-tap/chuong-trinh-dao-tao" target="_blank"
+                    rel="noopener noreferrer">myBK portal</a>
+                into the box below to get an accurate, unrounded GPA.
+            </p>
+        </header>
+
+        <main>
+            <textarea id="gradeReportInput" rows="15" placeholder="Paste your grade report content here..."></textarea>
+
+            <button id="calculateBtn">Recalculate My GPA</button>
+
+            <div id="resultContainer">
+                <!-- The formatted result will be injected here by JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed for accurate GPA calculation. No data is saved or sent anywhere.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

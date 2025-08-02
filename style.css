@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #0055A4; /* A nice blue */
+    --secondary-color: #FDB913; /* A contrasting yellow/gold */
+    --background-color: #f4f7f6;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --light-text-color: #666;
+    --border-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--light-text-color);
+    font-size: 0.95rem;
+}
+
+/* NEW STYLE FOR THE LINK */
+header a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+main textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 85, 164, 0.15);
+}
+
+main button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+main button:hover {
+    background-color: #004488;
+}
+
+main button:active {
+    transform: scale(0.99);
+}
+
+#resultContainer {
+    margin-top: 30px;
+}
+
+.result-card {
+    background: linear-gradient(135deg, #f9fafb, #eef2f7);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.result-header h2 {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.result-header p {
+    color: var(--light-text-color);
+    font-size: 1rem;
+}
+
+.result-scores {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.score-box {
+    flex-basis: 250px;
+    flex-grow: 1;
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.score-box .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.score-box .value {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.score-box .value span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--light-text-color);
+}
+
+.calculation-details {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #999;
+}
